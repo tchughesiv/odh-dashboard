@@ -30,6 +30,7 @@ type MockDashboardConfigType = {
   disableConnectionTypes?: boolean;
   disableNotebookController?: boolean;
   notebookSizes?: NotebookSize[];
+  disableFeast?: boolean;
 };
 
 export const mockDashboardConfig = ({
@@ -60,6 +61,7 @@ export const mockDashboardConfig = ({
   disableModelRegistry = true,
   disableConnectionTypes = true,
   disableNotebookController = false,
+  disableFeast = false,
   notebookSizes = [
     {
       name: 'XSmall',
@@ -167,6 +169,7 @@ export const mockDashboardConfig = ({
       disableDistributedWorkloads,
       disableModelRegistry,
       disableConnectionTypes,
+      disableFeast,
     },
     notebookController: {
       enabled: !disableNotebookController,

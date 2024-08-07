@@ -63,6 +63,7 @@ export enum SupportedArea {
   MODEL_REGISTRY = 'model-registry',
 
   DATA_CONNECTIONS_TYPES = 'data-connections-types',
+  FEAST = 'feast',
 }
 
 /** Components deployed by the Operator. Part of the DSC Status. */

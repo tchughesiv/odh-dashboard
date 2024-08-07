@@ -105,6 +105,11 @@ const useModelServingNav = (): NavDataItem[] =>
     { id: 'modelServing', label: 'Model Serving', href: '/modelServing' },
   ]);
 
+const useFeastNav = (): NavDataItem[] =>
+  useAreaCheck(SupportedArea.FEAST, [
+    { id: 'feast', label: 'Feast', href: '/feast' },
+  ]);
+  
 const useModelRegistrySectionNav = (): NavDataItem[] =>
   useAreaCheck(SupportedArea.MODEL_REGISTRY, [
     { id: 'modelRegistry', label: 'Model Registry', href: '/modelRegistry' },
@@ -200,6 +205,7 @@ export const useBuildNavData = (): NavDataItem[] => [
   ...useDistributedWorkloadsNav(),
   ...useModelServingNav(),
   ...useModelRegistrySectionNav(),
+  ...useFeastNav(),
   ...useResourcesNav(),
   ...useSettingsNav(),
 ];

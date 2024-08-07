@@ -15,6 +15,7 @@ const OUTPUT_ONLY = process.env._ODH_OUTPUT_ONLY;
 const ODH_FAVICON = process.env.ODH_FAVICON;
 const ODH_PRODUCT_NAME = process.env.ODH_PRODUCT_NAME;
 const COVERAGE = process.env.COVERAGE;
+const FEAST_DIR = process.env._FEAST_DIR;
 
 if (OUTPUT_ONLY !== 'true') {
   console.info(
@@ -29,6 +30,7 @@ module.exports = (env) => {
   return {
     entry: {
       app: path.join(SRC_DIR, 'index.tsx'),
+      feast: path.join(SRC_DIR, 'pages/feast/echo/commonjs-example/client.js'),
     },
     module: {
       rules: [
@@ -201,6 +203,11 @@ module.exports = (env) => {
             from: path.join(SRC_DIR, 'images'),
             to: path.join(DIST_DIR, 'images'),
             noErrorOnMissing: true,
+          },
+          {
+            from: path.join(SRC_DIR, 'pages/feast/echo'),
+            to: path.join(DIST_DIR, 'echo'),
+            noErrorOnMissing: false,
           },
           {
             from: path.join(SRC_DIR, 'favicon.ico'),

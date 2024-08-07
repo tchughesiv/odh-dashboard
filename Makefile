@@ -32,7 +32,7 @@ reinstall: build push undeploy deploy
 .PHONY: build
 build:
 	echo "Building ${IMAGE_REPOSITORY} from ${CONTAINER_DOCKERFILE}"
-	${CONTAINER_BUILDER} build -f ${CONTAINER_DOCKERFILE} -t ${IMAGE_REPOSITORY} .
+	${CONTAINER_BUILDER} build --ulimit nofile=131072:1048576 -f ${CONTAINER_DOCKERFILE} -t ${IMAGE_REPOSITORY} .
 
 ##################################
 

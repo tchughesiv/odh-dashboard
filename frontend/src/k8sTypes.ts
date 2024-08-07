@@ -1240,6 +1240,7 @@ export type DashboardCommonConfig = {
   disableDistributedWorkloads: boolean;
   disableModelRegistry: boolean;
   disableConnectionTypes: boolean;
+  disableFeast: boolean;
 };
 
 export type DashboardConfigKind = K8sResourceCommon & {

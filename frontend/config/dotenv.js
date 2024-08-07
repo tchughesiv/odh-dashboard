@@ -147,6 +147,7 @@ const setupDotenvFilesForEnv = ({ env }) => {
   const BACKEND_PORT = process.env.PORT || process.env.BACKEND_PORT || 8080;
   const DEV_MODE = process.env.ODH_DEV_MODE || undefined;
   const OUTPUT_ONLY = process.env._ODH_OUTPUT_ONLY === 'true';
+  const FEAST_DIR = path.resolve(RELATIVE_DIRNAME, 'src/pages/feast/echo');
 
   process.env._ODH_RELATIVE_DIRNAME = RELATIVE_DIRNAME;
   process.env._ODH_IS_PROJECT_ROOT_DIR = IS_ROOT;
@@ -160,6 +161,7 @@ const setupDotenvFilesForEnv = ({ env }) => {
   process.env._ODH_OUTPUT_ONLY = OUTPUT_ONLY;
   process.env._ODH_DEV_MODE = DEV_MODE;
   process.env._BACKEND_PORT = BACKEND_PORT;
+  process.env._FEAST_DIR = FEAST_DIR;
 };
 
 module.exports = { setupWebpackDotenvFilesForEnv, setupDotenvFilesForEnv };
