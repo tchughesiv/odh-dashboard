@@ -6,7 +6,7 @@ import {
   PrometheusQueryRangeResultValue,
 } from '~/types';
 import { DEFAULT_CONTEXT_DATA } from '~/utilities/const';
-import { PerformanceMetricType } from '~/pages/modelServing/screens/types';
+import { PerformanceMetricType } from '~/pages/feast/screens/types';
 import { MetricsCommonContext } from '~/concepts/metrics/MetricsCommonContext';
 
 export enum ServerMetricType {

@@ -2,7 +2,7 @@ import { DomainTuple, ForAxes } from 'victory-core';
 import { ChartThemeDefinitionInterface } from '@patternfly/react-charts';
 import { ContextResourceData, PrometheusQueryRangeResultValue } from '~/types';
 import { BiasMetricType } from '~/api';
-import { ModelMetricType } from '~/pages/modelServing/screens/metrics/ModelServingMetricsContext';
+import { ModelMetricType } from '~/pages/feast/screens/metrics/ModelServingMetricsContext';
 import { BiasMetricConfig } from '~/concepts/trustyai/types';
 
 export type TranslatePoint = (line: GraphMetricPoint) => GraphMetricPoint;

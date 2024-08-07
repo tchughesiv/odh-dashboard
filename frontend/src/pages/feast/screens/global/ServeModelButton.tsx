@@ -1,18 +1,18 @@
 import * as React from 'react';
 import { Button, Tooltip } from '@patternfly/react-core';
 import { useParams } from 'react-router-dom';
-import ManageInferenceServiceModal from '~/pages/modelServing/screens/projects/InferenceServiceModal/ManageInferenceServiceModal';
-import { ModelServingContext } from '~/pages/modelServing/ModelServingContext';
+import ManageInferenceServiceModal from '~/pages/feast/screens/projects/InferenceServiceModal/ManageInferenceServiceModal';
+import { ModelServingContext } from '~/pages/feast/ModelServingContext';
 import {
   getSortedTemplates,
   getTemplateEnabled,
   getTemplateEnabledForPlatform,
-} from '~/pages/modelServing/customServingRuntimes/utils';
+} from '~/pages/feast/customServingRuntimes/utils';
 import { ServingRuntimePlatform } from '~/types';
-import { getProjectModelServingPlatform } from '~/pages/modelServing/screens/projects/utils';
-import ManageKServeModal from '~/pages/modelServing/screens/projects/kServeModal/ManageKServeModal';
+import { getProjectModelServingPlatform } from '~/pages/feast/screens/projects/utils';
+import ManageKServeModal from '~/pages/feast/screens/projects/kServeModal/ManageKServeModal';
 import { byName, ProjectsContext } from '~/concepts/projects/ProjectsContext';
-import useServingPlatformStatuses from '~/pages/modelServing/useServingPlatformStatuses';
+import useServingPlatformStatuses from '~/pages/feast/useServingPlatformStatuses';
 
 const ServeModelButton: React.FC = () => {
   const [platformSelected, setPlatformSelected] = React.useState<

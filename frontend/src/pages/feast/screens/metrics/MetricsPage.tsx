@@ -4,11 +4,11 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { CogIcon } from '@patternfly/react-icons';
 import { BreadcrumbItemType } from '~/types';
 import ApplicationsPage from '~/pages/ApplicationsPage';
-import MetricsPageTabs from '~/pages/modelServing/screens/metrics/MetricsPageTabs';
-import { MetricsTabKeys } from '~/pages/modelServing/screens/metrics/types';
-import { PerformanceMetricType } from '~/pages/modelServing/screens/types';
+import MetricsPageTabs from '~/pages/feast/screens/metrics/MetricsPageTabs';
+import { MetricsTabKeys } from '~/pages/feast/screens/metrics/types';
+import { PerformanceMetricType } from '~/pages/feast/screens/types';
 import { TrustyAIContext } from '~/concepts/trustyai/context/TrustyAIContext';
-import ServerMetricsPage from '~/pages/modelServing/screens/metrics/performance/ServerMetricsPage';
+import ServerMetricsPage from '~/pages/feast/screens/metrics/performance/ServerMetricsPage';
 import { InferenceServiceKind } from '~/k8sTypes';
 import { getBreadcrumbItemComponents } from './utils';
 

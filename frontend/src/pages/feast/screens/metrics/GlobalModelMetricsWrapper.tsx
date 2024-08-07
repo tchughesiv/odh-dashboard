@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Outlet } from 'react-router-dom';
-import { PerformanceMetricType } from '~/pages/modelServing/screens/types';
+import { PerformanceMetricType } from '~/pages/feast/screens/types';
 import { InferenceServiceKind } from '~/k8sTypes';
 import { MetricsCommonContextProvider } from '~/concepts/metrics/MetricsCommonContext';
 import ModelMetricsPathWrapper from './ModelMetricsPathWrapper';

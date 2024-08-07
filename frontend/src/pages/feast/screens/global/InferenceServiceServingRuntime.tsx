@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ServingRuntimeKind } from '~/k8sTypes';
-import { getDisplayNameFromServingRuntimeTemplate } from '~/pages/modelServing/customServingRuntimes/utils';
+import { getDisplayNameFromServingRuntimeTemplate } from '~/pages/feast/customServingRuntimes/utils';
 
 type Props = {
   servingRuntime?: ServingRuntimeKind;

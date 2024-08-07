@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { Tab, TabAction, Tabs, TabTitleText } from '@patternfly/react-core';
-import { MetricsTabKeys } from '~/pages/modelServing/screens/metrics/types';
+import { MetricsTabKeys } from '~/pages/feast/screens/metrics/types';
 import { useModelBiasData } from '~/concepts/trustyai/context/useModelBiasData';
 import NotFound from '~/pages/NotFound';
 import useDoesTrustyAICRExist from '~/concepts/trustyai/context/useDoesTrustyAICRExist';

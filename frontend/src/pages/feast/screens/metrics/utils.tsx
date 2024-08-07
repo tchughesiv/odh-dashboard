@@ -12,7 +12,7 @@ import { BiasMetricConfig } from '~/concepts/trustyai/types';
 import {
   BIAS_CHART_CONFIGS,
   BIAS_THRESHOLD_COLOR,
-} from '~/pages/modelServing/screens/metrics/const';
+} from '~/pages/feast/screens/metrics/const';
 import { PROMETHEUS_REQUEST_RESOLUTION } from '~/concepts/metrics/const';
 import { isEnumMember } from '~/utilities/utils';
 import {

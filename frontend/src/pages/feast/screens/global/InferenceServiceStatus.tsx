@@ -7,7 +7,7 @@ import {
   OutlinedQuestionCircleIcon,
 } from '@patternfly/react-icons';
 import { InferenceServiceKind } from '~/k8sTypes';
-import { InferenceServiceModelState } from '~/pages/modelServing/screens/types';
+import { InferenceServiceModelState } from '~/pages/feast/screens/types';
 import { getInferenceServiceActiveModelState, getInferenceServiceStatusMessage } from './utils';
 import { useModelStatus } from './useModelStatus';
 

@@ -7,7 +7,7 @@ import {
   ModelMetricType,
   ModelServingMetricsContext,
   ServerMetricType,
-} from '~/pages/modelServing/screens/metrics/ModelServingMetricsContext';
+} from '~/pages/feast/screens/metrics/ModelServingMetricsContext';
 
 const DEFAULT_ACCESS_DOMAIN = 'metrics';
 

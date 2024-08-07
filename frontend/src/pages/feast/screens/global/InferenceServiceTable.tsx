@@ -1,11 +1,11 @@
 import * as React from 'react';
-import ManageInferenceServiceModal from '~/pages/modelServing/screens/projects/InferenceServiceModal/ManageInferenceServiceModal';
+import ManageInferenceServiceModal from '~/pages/feast/screens/projects/InferenceServiceModal/ManageInferenceServiceModal';
 import { Table } from '~/components/table';
 import { InferenceServiceKind, SecretKind, ServingRuntimeKind } from '~/k8sTypes';
 import { ProjectsContext } from '~/concepts/projects/ProjectsContext';
 import DashboardEmptyTableView from '~/concepts/dashboard/DashboardEmptyTableView';
-import { isModelMesh } from '~/pages/modelServing/utils';
-import ManageKServeModal from '~/pages/modelServing/screens/projects/kServeModal/ManageKServeModal';
+import { isModelMesh } from '~/pages/feast/utils';
+import ManageKServeModal from '~/pages/feast/screens/projects/kServeModal/ManageKServeModal';
 import ResourceTr from '~/components/ResourceTr';
 import InferenceServiceTableRow from './InferenceServiceTableRow';
 import { getGlobalInferenceServiceColumns, getProjectInferenceServiceColumns } from './data';

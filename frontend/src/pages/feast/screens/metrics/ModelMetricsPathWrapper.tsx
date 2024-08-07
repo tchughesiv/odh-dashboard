@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useParams } from 'react-router-dom';
 import { Bullseye, Spinner } from '@patternfly/react-core';
-import { ModelServingContext } from '~/pages/modelServing/ModelServingContext';
+import { ModelServingContext } from '~/pages/feast/ModelServingContext';
 import NotFound from '~/pages/NotFound';
 import { InferenceServiceKind } from '~/k8sTypes';
 
