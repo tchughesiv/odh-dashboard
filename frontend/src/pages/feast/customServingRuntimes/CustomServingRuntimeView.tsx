@@ -1,7 +1,7 @@
 import * as React from 'react';
 import ApplicationsPage from '~/pages/ApplicationsPage';
-import CustomServingRuntimeListView from '~/pages/modelServing/customServingRuntimes/CustomServingRuntimeListView';
-import CustomServingRuntimeHeaderLabels from '~/pages/modelServing/customServingRuntimes/CustomServingRuntimeHeaderLabels';
+import CustomServingRuntimeListView from './CustomServingRuntimeListView';
+import CustomServingRuntimeHeaderLabels from './CustomServingRuntimeHeaderLabels';
 import EmptyCustomServingRuntime from './EmptyCustomServingRuntime';
 import { CustomServingRuntimeContext } from './CustomServingRuntimeContext';
 

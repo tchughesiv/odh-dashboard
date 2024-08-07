@@ -6,7 +6,7 @@ import useFetchState, {
   FetchStateCallbackPromise,
   NotReadyError,
 } from '~/utilities/useFetchState';
-import useModelServingEnabled from '~/pages/modelServing/useModelServingEnabled';
+import useModelServingEnabled from './useModelServingEnabled';
 import { LABEL_SELECTOR_DASHBOARD_RESOURCE } from '~/const';
 
 const accessReviewResource: AccessReviewResourceAttributes = {

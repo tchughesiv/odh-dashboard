@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { getServingRuntimeContext, listServingRuntimes, useAccessReview } from '~/api';
 import { AccessReviewResourceAttributes, ServingRuntimeKind } from '~/k8sTypes';
-import useModelServingEnabled from '~/pages/modelServing/useModelServingEnabled';
+import useModelServingEnabled from './useModelServingEnabled';
 import useFetchState, {
   FetchState,
   FetchStateCallbackPromise,

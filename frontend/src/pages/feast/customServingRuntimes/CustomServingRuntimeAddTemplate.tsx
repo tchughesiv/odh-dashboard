@@ -22,7 +22,7 @@ import {
   updateServingRuntimeTemplateBackend,
 } from '~/services/templateService';
 import { ServingRuntimeAPIProtocol, ServingRuntimePlatform } from '~/types';
-import CustomServingRuntimePlatformsSelector from '~/pages/modelServing/customServingRuntimes/CustomServingRuntimePlatformsSelector';
+import CustomServingRuntimePlatformsSelector from './CustomServingRuntimePlatformsSelector';
 import {
   getAPIProtocolFromTemplate,
   getEnabledPlatformsFromTemplate,

@@ -26,7 +26,7 @@ import useDataConnections from '~/pages/projects/screens/detail/data-connections
 import useSyncPreferredProject from '~/concepts/projects/useSyncPreferredProject';
 import { ProjectsContext, byName } from '~/concepts/projects/ProjectsContext';
 import { SupportedArea, conditionalArea } from '~/concepts/areas';
-import useServingPlatformStatuses from '~/pages/modelServing/useServingPlatformStatuses';
+import useServingPlatformStatuses from './useServingPlatformStatuses';
 import { useTemplates } from '~/api';
 import useInferenceServices from './useInferenceServices';
 import useServingRuntimes from './useServingRuntimes';

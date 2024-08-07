@@ -4,7 +4,7 @@ import { TemplateKind } from '~/k8sTypes';
 import {
   getAPIProtocolFromTemplate,
   getEnabledPlatformsFromTemplate,
-} from '~/pages/modelServing/customServingRuntimes/utils';
+} from './utils';
 import { ServingRuntimeAPIProtocol, ServingRuntimePlatform } from '~/types';
 
 type CustomServingRuntimeAPIProtocolLabelProps = {

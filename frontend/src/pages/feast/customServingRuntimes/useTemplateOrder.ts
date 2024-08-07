@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { getDashboardConfigTemplateOrder } from '~/api';
-import useCustomServingRuntimesEnabled from '~/pages/modelServing/customServingRuntimes/useCustomServingRuntimesEnabled';
+import useCustomServingRuntimesEnabled from './useCustomServingRuntimesEnabled';
 import { getDashboardConfigTemplateOrderBackend } from '~/services/dashboardService';
 import useFetchState, { FetchState, NotReadyError } from '~/utilities/useFetchState';
 

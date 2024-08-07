@@ -1,7 +1,7 @@
 import { Label, LabelGroup } from '@patternfly/react-core';
 import * as React from 'react';
 import { TemplateKind } from '~/k8sTypes';
-import { getEnabledPlatformsFromTemplate } from '~/pages/modelServing/customServingRuntimes/utils';
+import { getEnabledPlatformsFromTemplate } from './utils';
 import { ServingRuntimePlatform } from '~/types';
 
 type CustomServingRuntimePlatformsLabelGroupProps = {

@@ -1,5 +1,5 @@
 import { StackComponent, SupportedArea, useIsAreaAvailable } from '~/concepts/areas';
-import { ServingPlatformStatuses } from '~/pages/modelServing/screens/types';
+import { ServingPlatformStatuses } from './screens/types';
 
 const useServingPlatformStatuses = (): ServingPlatformStatuses => {
   const kServeStatus = useIsAreaAvailable(SupportedArea.K_SERVE);

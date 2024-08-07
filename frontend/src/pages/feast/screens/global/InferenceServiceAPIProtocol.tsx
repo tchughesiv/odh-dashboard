@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Label, Text, TextVariants } from '@patternfly/react-core';
 import { ServingRuntimeKind } from '~/k8sTypes';
-import { getAPIProtocolFromServingRuntime } from '~/pages/modelServing/customServingRuntimes/utils';
+import { getAPIProtocolFromServingRuntime } from '~/pages/feast/customServingRuntimes/utils';
 import { ServingRuntimeAPIProtocol } from '~/types';
 
 type Props = {

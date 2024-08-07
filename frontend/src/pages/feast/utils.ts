@@ -35,7 +35,7 @@ import {
   ServingRuntimeEditInfo,
   ModelServingSize,
   ServingRuntimeToken,
-} from '~/pages/modelServing/screens/types';
+} from './screens/types';
 import { AcceleratorProfileState } from '~/utilities/useAcceleratorProfileState';
 import { getAcceleratorProfileCount } from '~/utilities/utils';
 

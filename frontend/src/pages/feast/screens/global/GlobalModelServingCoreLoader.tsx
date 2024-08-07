@@ -3,9 +3,9 @@ import { Navigate, Outlet, useParams } from 'react-router-dom';
 import ApplicationsPage from '~/pages/ApplicationsPage';
 import { byName, ProjectsContext } from '~/concepts/projects/ProjectsContext';
 import InvalidProject from '~/concepts/projects/InvalidProject';
-import ModelServingContextProvider from '~/pages/modelServing/ModelServingContext';
-import ModelServingNoProjects from '~/pages/modelServing/screens/global/ModelServingNoProjects';
-import ModelServingProjectSelection from '~/pages/modelServing/screens/global/ModelServingProjectSelection';
+import ModelServingContextProvider from '~/pages/feast/ModelServingContext';
+import ModelServingNoProjects from '~/pages/feast/screens/global/ModelServingNoProjects';
+import ModelServingProjectSelection from '~/pages/feast/screens/global/ModelServingProjectSelection';
 
 type ApplicationPageProps = React.ComponentProps<typeof ApplicationsPage>;
 type EmptyStateProps = 'emptyStatePage' | 'empty';
