@@ -156,7 +156,7 @@ const ModelServingContextProvider = conditionalArea<ModelServingContextProviderP
       <Bullseye>
         <EmptyState>
           <EmptyStateHeader
-            titleText="Problem loading model serving page"
+            titleText="Problem loading feast page"
             icon={<EmptyStateIcon icon={ExclamationCircleIcon} />}
             headingLevel="h2"
           />

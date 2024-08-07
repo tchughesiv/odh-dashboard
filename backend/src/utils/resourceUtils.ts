@@ -576,7 +576,6 @@ export const getDashboardConfig = (request?: FastifyRequest): DashboardConfig =>
       }
     }
   }
-
   return blankDashboardCR;
 };
 
