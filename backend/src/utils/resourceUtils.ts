@@ -576,7 +576,8 @@ export const getDashboardConfig = (request?: FastifyRequest): DashboardConfig =>
       }
     }
   }
-  return dashboardConfig;
+
+  return blankDashboardCR;
 };
 
 export const updateDashboardConfig = (): Promise<void> => {

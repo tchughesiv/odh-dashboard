@@ -28,6 +28,7 @@ const NotebookLogoutRedirectPage = React.lazy(
 );
 const ProjectViewRoutes = React.lazy(() => import('../pages/projects/ProjectViewRoutes'));
 const ModelServingRoutes = React.lazy(() => import('../pages/modelServing/ModelServingRoutes'));
+const FeastRoutes = React.lazy(() => import('../pages/feast/FeastRoutes'));
 const NotebookController = React.lazy(
   () => import('../pages/notebookController/NotebookController'),
 );
@@ -103,6 +104,8 @@ const AppRoutes: React.FC = () => {
           path="/notebook/:namespace/:notebookName/logout"
           element={<NotebookLogoutRedirectPage />}
         />
+
+        <Route path="/feast/*" element={<FeastRoutes />} />
 
         <Route path="/modelServing/*" element={<ModelServingRoutes />} />
 

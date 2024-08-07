@@ -30,6 +30,7 @@ export const allFeatureFlags: string[] = Object.keys({
   disableDistributedWorkloads: false,
   disableModelRegistry: false,
   disableConnectionTypes: false,
+  disableFeast: false,
 } satisfies DashboardCommonConfig);
 
 export const SupportedAreasStateMap: SupportedAreasState = {
@@ -126,5 +127,8 @@ export const SupportedAreasStateMap: SupportedAreasState = {
   },
   [SupportedArea.DATA_CONNECTIONS_TYPES]: {
     featureFlags: ['disableConnectionTypes'],
+  },
+  [SupportedArea.FEAST]: {
+    featureFlags: ['disableFeast'],
   },
 };
