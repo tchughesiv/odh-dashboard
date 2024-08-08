@@ -33,6 +33,7 @@
     "postinstall": "run-p postinstall:*",
     "postinstall:backend": "cd ./backend && npm install",
     "postinstall:frontend": "cd ./frontend && npm install",
+    "postinstall:feast": "cd ./frontend/src/pages/feast/echo/commonjs-example && npm install",
     "start": "run-p start:*",
     "start:backend": "cd ./backend && npm start",
     "start:frontend": "echo \"...available at ./frontend/public\"",
