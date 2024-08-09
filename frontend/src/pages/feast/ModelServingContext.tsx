@@ -1,15 +1,7 @@
 import * as React from 'react';
-import {
-  Bullseye,
-  Button,
-  EmptyState,
-  EmptyStateBody,
-  EmptyStateIcon,
-  EmptyStateHeader,
-  EmptyStateFooter,
-} from '@patternfly/react-core';
+//import * as fs from 'fs';
+import ReactDOMServer from "react-dom/server";
 import { useNavigate } from 'react-router-dom';
-import { ExclamationCircleIcon } from '@patternfly/react-icons';
 import {
   ServingRuntimeKind,
   InferenceServiceKind,
@@ -132,54 +124,32 @@ const ModelServingContextProvider = conditionalArea<ModelServingContextProviderP
     [namespace, serverSecrets],
   );
 
-  if (
-    notInstalledError ||
-    servingRuntimes.error ||
-    inferenceServices.error ||
-    servingRuntimeTemplates[2] ||
-    servingRuntimeTemplateOrder.error ||
-    servingRuntimeTemplateDisablement.error ||
-    serverSecrets.error ||
-    dataConnections.error
-  ) {
-    return getErrorComponent ? (
-      getErrorComponent(
-        notInstalledError?.message ||
-          servingRuntimes.error?.message ||
-          inferenceServices.error?.message ||
-          servingRuntimeTemplates[2]?.message ||
-          servingRuntimeTemplateOrder.error?.message ||
-          servingRuntimeTemplateDisablement.error?.message ||
-          dataConnections.error?.message,
-      )
-    ) : (
-      <Bullseye>
-        <EmptyState>
-          <EmptyStateHeader
-            titleText="Problem loading feast page"
-            icon={<EmptyStateIcon icon={ExclamationCircleIcon} />}
-            headingLevel="h2"
-          />
-          <EmptyStateBody>
-            {notInstalledError?.message ||
-              servingRuntimes.error?.message ||
-              inferenceServices.error?.message ||
-              servingRuntimeTemplates[2]?.message ||
-              servingRuntimeTemplateOrder.error?.message ||
-              servingRuntimeTemplateDisablement.error?.message ||
-              serverSecrets.error?.message ||
-              dataConnections.error?.message}
-          </EmptyStateBody>
-          <EmptyStateFooter>
-            <Button variant="primary" onClick={() => navigate('/projects')}>
-              View my projects
-            </Button>
-          </EmptyStateFooter>
-        </EmptyState>
-      </Bullseye>
-    );
-  }
+  const iframeRef = React.useRef() as React.MutableRefObject<HTMLIFrameElement>;
+  const [height, setHeight] = React.useState("0px");
+  const onLoad = () => {
+    setHeight(iframeRef.current?.contentWindow?.document.body.scrollHeight + "px");
+  };
+  //const srcDoc = <MyComponent />;
+  return (
+    <iframe
+      ref={iframeRef}
+      onLoad={onLoad}
+      id="myFrame"
+      //src="http://transcendentlushmajesticmelody.neverssl.com/online/"
+      src="../../echo/commonjs-example/feast-test.html"
+      //srcDoc={ReactDOMServer.renderToString(srcDoc)}
+      width="100%"
+      height={height}
+      scrolling="no"
+      frameBorder="0"
+      style={{
+        maxWidth: 640,
+        width: "100%",
+        overflow: "auto",
+      }}></iframe>
+  );
 
+  /*
   return (
     <ModelServingContext.Provider
       value={{
@@ -200,6 +170,18 @@ const ModelServingContextProvider = conditionalArea<ModelServingContextProviderP
       {children}
     </ModelServingContext.Provider>
   );
+  */
 });
+
+/*
+const MyComponent = () => {
+  var test = "";
+  fs.readFile('../../echo/commonjs-example/feast-test.html', (err, inputD) => {
+    if (err) throw err;
+      test = inputD.toString();
+  });
+  return test;
+};
+*/
 
 export default ModelServingContextProvider;
